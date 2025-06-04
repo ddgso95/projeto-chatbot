@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio - Pizza Kings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .btn-voltar {
+      border: 1px solid orange;
+      background: none;
+      color: white;
+      padding: 2px 15px;
+      margin: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+    }
+
+    .titulo-principal {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      border-top: 2px solid orange;
+      border-bottom: 2px solid orange;
+      padding: 10px 0;
+    }
+
+    .subtitulo {
+      font-size: 24px;
+      text-align: center;
+      margin: 20px auto 10px;
+    }
+
+    .cardapio {
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 0 15px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 13px;
+      color: orange;
+    }
+
+    .descricao {
+      font-size: 11px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .bordas .item {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .footer-text {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 30px 0 10px;
+      text-align: center;
+    }
+
+    .pizza-foto {
+      width: 100%;  
+      display: block;
+      margin: 0;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+      max-height: 390px;
+      object-fit: cover;
+      margin: 1rem 0;
+    }
+    .linha-laranja {
+      border-top: 2px solid orange;
+      margin: 20px 0;
+    }
+
+    .col-divider {
+      border-left: 2px solid orange;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn-voltar">Voltar</button>
+
+  <div class="titulo-principal">Pizzas</div>
+  <div class="subtitulo">Salgadas</div>
+
+  <div class="cardapio container">
+    <div class="row">
+      <div class="col-6 pe-4">
+        <!-- Salgadas -->
+        <div class="item"><span>Pepperoni</span><span>R$30,00</span></div>
+        <div class="descricao">Molho de tomate, pepperoni e mussarela.</div>
+
+        <div class="item"><span>Calabresa</span><span>R$30,00</span></div>
+        <div class="descricao">Linguiça, cebola e mussarela.</div>
+
+        <div class="item"><span>Quatro Queijos</span><span>R$30,00</span></div>
+        <div class="descricao">Mussarela, parmesão, gorgonzola e catupiry.</div>
+
+        <div class="item"><span>Margherita</span><span>R$30,00</span></div>
+        <div class="descricao">Molho de tomate, mussarela e manjericão.</div>
+
+        <div class="item"><span>Portuguesa</span><span>R$30,00</span></div>
+        <div class="descricao">Presunto, ovos, ervilha, cebola e bacon.</div>
+
+        <div class="item"><span>Frango com Catupiry</span><span>R$30,00</span></div>
+        <div class="descricao">Frango desfiado, catupiry e mussarela.</div>
+
+        <div class="item"><span>Atum</span><span>R$30,00</span></div>
+        <div class="descricao">Atum e mussarela.</div>
+
+        <div class="item"><span>Mussarela</span><span>R$30,00</span></div>
+        <div class="descricao">Molho e bastante mussarela.</div>
+
+        <div class="item"><span>Napolitana</span><span>R$30,00</span></div>
+        <div class="descricao">Tomate, alho, parmesão e azeitonas.</div>
+      </div>
+
+      <div class="col-6 ps-4 col-divider">
+        <div class="subtitulo">Doces</div>
+
+        <div class="item"><span>Chocolate com Morango</span><span>R$40,00</span></div>
+        <div class="descricao">Chocolate e morangos frescos.</div>
+
+        <div class="item"><span>Banana com Canela</span><span>R$30,00</span></div>
+        <div class="descricao">Banana fatiada e canela.</div>
+
+        <div class="item"><span>Romeu e Julieta</span><span>R$40,00</span></div>
+        <div class="descricao">Goiabada e mussarela derretida.</div>
+
+        <div class="item"><span>Brigadeiro</span><span>R$40,00</span></div>
+        <div class="descricao">Brigadeiro cremoso e granulado.</div>
+
+        <div class="linha-laranja"></div>
+
+        <div class="subtitulo">Bordas</div>
+        <div class="bordas">
+          <div class="item"><span>Cheddar / Catupiry</span><span>R$10,00</span></div>
+          <div class="item"><span>Cream Cheese</span><span>R$10,00</span></div>
+          <div class="item"><span>4 Queijos</span><span>R$10,00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-text">A Melhor da Região!</div> 
+  </div>
+  <!-- Foto no rodapé, fora do container -->
+  <div class="d-flex justify-content-center">
+    <div class="w-100" style="max-width: 430px;">
+      <div class="banner">
+        <img src="images/cardapio.png" alt="Pizza" class="pizza-foto" />
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

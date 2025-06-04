@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados do Usuário - Pizza Kings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .form-label {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+    .form-control-custom {
+      background-color: black;
+      color: white;
+      border: 2px solid orange;
+      border-radius: 30px;
+      padding: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 5px;
+    }
+    .form-control-custom:focus {
+      background-color: black;
+      color: white;
+      border-color: orange;
+      box-shadow: none;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .btn-custom {
+      background-color: black;
+      color: white;
+      border: 2px solid orange;
+      border-radius: 20px;
+      padding: 10px 30px;
+      font-size: 1.5rem;
+      width: 45%;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: orange;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-group">
+      <label class="form-label">Nome e sobrenome</label>
+      <input type="text" class="form-control form-control-custom" value="Fábio Queiroz" readonly>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Apelido</label>
+      <input type="text" class="form-control form-control-custom" value="Fatia Quente" readonly>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Aniversário</label>
+      <input type="text" class="form-control form-control-custom" value="21/03/1955" readonly>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">CPF</label>
+      <input type="text" class="form-control form-control-custom" value="453.178.287-91" readonly>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Telefone</label>
+      <input type="text" class="form-control form-control-custom" value="(11) 4002-8922" readonly>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control form-control-custom" value="Cienceiros@TI.com.br" readonly>
+    </div>
+
+    <div class="footer-buttons">
+      <button class="btn btn-custom">Voltar</button>
+      <button class="btn btn-custom">Salvar</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

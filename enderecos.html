@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endereços - Pizza Kings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 2.5rem;
+      color: orange;
+      margin-bottom: 30px;
+    }
+    .pizza-kings-logo {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            /* filter: brightness(0) invert(1);*/ /* Filtro para tentar tornar o logo branco */
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      background-color: black;
+      color: white;
+      border: 2px solid orange;
+      border-radius: 30px;
+      padding: 10px;
+      font-size: 1.5rem;
+      width: 100%;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn-custom:hover {
+      background-color: orange;
+      color: black;
+    }
+    .address-card {
+      background-color: black;
+      border: 1px solid orange;
+      border-radius: 20px;
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 1rem;
+    }
+    .address-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .address-subheader {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 5px;
+    }
+    .address-subtitle {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    .btn-small {
+      background-color: black;
+      color: white;
+      border: 2px solid orange;
+      border-radius: 30px;
+      padding: 5px 20px;
+      font-size: 1.5rem;
+      margin: 10px;
+      transition: 0.3s;
+      width: 45%;
+    }
+    .btn-small:hover {
+      background-color: orange;
+      color: black;
+    }
+    .text-left {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+        <img src="images/Group 48.png" alt="Pizza Kings Logo" class="pizza-kings-logo">
+    </div>
+
+    <div class="section-title">
+      Endereços
+    </div>
+
+    <button class="btn btn-custom mb-4">
+      <i class="bi bi-geo-alt-fill"></i> Buscar por cep
+    </button>
+
+    <div class="text-left mb-2">
+      <h5>Endereço em uso</h5>
+    </div>
+
+    <div class="address-card">
+      <div class="address-header">
+        <i class="bi bi-check-circle-fill text-danger"></i>
+        <span class="badge bg-warning text-dark">Casa</span>
+      </div>
+      <div class="address-subheader">
+        <i class="bi bi-house-door-fill text-danger"></i>
+        <div>
+          Condomínio solar de brasília, Brasília, DF<br>
+          <span class="address-subtitle">SH Jardim Botânico - Jardim Botânico</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-left mb-2">
+      <h5>Meus endereços</h5>
+    </div>
+
+    <div class="address-card">
+      <div class="address-header">
+        <i class="bi bi-check-circle-fill text-danger"></i>
+        <span class="badge bg-warning text-dark">Casa do Luiz</span>
+      </div>
+      <div class="address-subheader">
+        <i class="bi bi-geo-alt-fill text-danger"></i>
+        <div>
+          Bairro Primavera, Cidade alegre, AA<br>
+          <span class="address-subtitle">Rua das Flores, 123</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-custom">
+      <i class="bi bi-plus-circle"></i> Adicionar endereço
+    </button>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button class="btn btn-small">Voltar</button>
+      <button class="btn btn-small">Salvar</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

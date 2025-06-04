@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizza Kings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome para ícones -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-ZfIuM2U4OqzXuP2rtykaG5H6Gyh1cRNCcR6OavZ+pQ0D0qMaKq2zHz2a2r4lVUx+8qSghZb3Y+eF4cExdJ5t0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin-bottom: 160px;
+    }
+    .logo {
+      font-size: 2.5rem;
+      color: orange;
+      margin-bottom: 20px;
+    }
+    .pizza-kings-logo {
+      width: 300px;
+      display: block;
+      margin: 20px auto;
+      /*filter: brightness(0) invert(1);*/ /* Filtro para tentar tornar o logo branco */
+    }
+    .pizza-rodape-logo {
+      width: 200px;
+      display: block;
+      filter: brightness(0) invert(1); /* Filtro para tentar tornar o logo branco */
+    }
+    .orange {
+      color: orange;
+    }
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .payment-option {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .payment-option i {
+      font-size: 24px;
+      margin-right: 10px;
+      color: orange;
+    }
+    .footer-section {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      z-index: 1000;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 5px;
+      flex-wrap: wrap;
+      gap: 2px;
+      background-color: #000;
+    }
+    .footer-buttons .btn {
+      font-size: 11px;
+      padding: 3px 6px;
+      font-weight: bold;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: orange;
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .footer-main {
+      background-color: orange;
+      padding: 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-main .left {
+      display: flex;
+      align-items: center;
+    }
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .pizza-icon {
+      font-size: 16px;
+    }
+    .menu-icon {
+      font-size: 22px;
+      color: white;
+    }
+    .footer-main .icons i {
+      font-size: 20px;
+      color: white;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/Group 48.png" alt="Pizza Kings Logo" class="pizza-kings-logo">
+  </div>
+
+  <div class="container text-center">
+    <div class="row justify-content-center mb-3">
+      <div class="col-6">
+        <div class="icon-circle">
+          <span style="font-size: 36px;">🛵</span>
+        </div>
+        <p class="mt-2">Delivery</p>
+      </div>
+      <div class="col-6">
+        <div class="icon-circle">
+          <span style="font-size: 36px;">🏃‍♂️</span>
+        </div>
+        <p class="mt-2">Retirar na loja</p>
+      </div>
+    </div>
+  
+    <div class="icon-circle my-3">
+      <span style="font-size: 36px;">💵</span>
+    </div>
+  
+    <h4 class="mb-3">Formas de pagamento</h4>
+  
+    <div class="payment-option">
+      <span style="font-size: 22px; margin-right: 10px;">💰</span>
+      <span>Dinheiro</span>
+    </div>
+  
+    <div class="payment-option">
+      <span style="font-size: 22px; margin-right: 10px;">💳</span>
+      <span>Débito ou Crédito</span>
+    </div>
+  
+    <div class="payment-option">
+      <span style="font-size: 22px; margin-right: 10px;">📱</span>
+      <span>Pix</span>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+<div class="footer-section">
+  <!-- Botões superiores -->
+  <div class="footer-buttons">
+    <button class="btn">🏠 Início</button>
+    <button class="btn">ℹ️ Informações</button>
+    <button class="btn">⏱️ Acompanhar pedido</button>
+    <button class="btn">🍕 Cardápio</button>
+  </div>
+
+  <!-- Logo e ícones inferiores -->
+  <div class="footer-main">
+    <div class="left">
+      <span class="menu-icon me-2" style="color: white; font-size: 22px;">☰</span>
+      <div class="logo-text">
+        <img src="images/Group 48.png" alt="Pizza Kings Logo" class="pizza-rodape-logo">
+      </div>
+    </div>
+    <div class="icons" style="color: white; font-size: 20px;">
+      <span class="me-3">👤</span>
+      <span>🔍</span>
+      <span class="me-3">🛒</span>
+    </div>    
+  </div>
+</div>
+
+</body>
+</html>
